@@ -15,6 +15,45 @@ The dataset includes comprehensive information for each vehicle, such as:
 
 Our dataset is still under development and refinement. Currently, we are releasing only half of the data, covering 6 modalities. The remaining modalities will be added once sorting and processing are completed.
 
+## File Naming Convention
+
+The dataset is organized into the following 12 files:
+
+| File Name | Movement Description |
+|-----------|----------------------|
+| `01_southbound_left_turn.csv` | From **south** entering, turning **left** |
+| `02_southbound_through.csv` | From **south** entering, going **straight** |
+| `03_southbound_right_turn.csv` | From **south** entering, turning **right** |
+| `04_westbound_left_turn.csv` | From **west** entering, turning **left** |
+| `05_westbound_through.csv` | From **west** entering, going **straight** |
+| `06_westbound_right_turn.csv` | From **west** entering, turning **right** |
+| `07_northbound_left_turn.csv` | From **north** entering, turning **left** |
+| `08_northbound_through.csv` | From **north** entering, going **straight** |
+| `09_northbound_right_turn.csv` | From **north** entering, turning **right** |
+| `10_eastbound_left_turn.csv` | From **east** entering, turning **left** |
+| `11_eastbound_through.csv` | From **east** entering, going **straight** |
+| `12_eastbound_right_turn.csv` | From **east** entering, turning **right** |
+
+## Movement Encoding
+
+For convenience in data processing, each file also contains a `movement_code` column with the following standardized encodings:
+
+| Movement | Code | Description |
+|----------|------|-------------|
+| Southbound Left Turn | `SB-LT` | From south, turning left (west) |
+| Southbound Through | `SB-TH` | From south, going straight (north) |
+| Southbound Right Turn | `SB-RT` | From south, turning right (east) |
+| Westbound Left Turn | `WB-LT` | From west, turning left (south) |
+| Westbound Through | `WB-TH` | From west, going straight (east) |
+| Westbound Right Turn | `WB-RT` | From west, turning right (north) |
+| Northbound Left Turn | `NB-LT` | From north, turning left (east) |
+| Northbound Through | `NB-TH` | From north, going straight (south) |
+| Northbound Right Turn | `NB-RT` | From north, turning right (west) |
+| Eastbound Left Turn | `EB-LT` | From east, turning left (north) |
+| Eastbound Through | `EB-TH` | From east, going straight (west) |
+| Eastbound Right Turn | `EB-RT` | From east, turning right (south) |
+
+
 
 ## Usage
 
