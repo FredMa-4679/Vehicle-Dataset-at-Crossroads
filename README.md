@@ -34,26 +34,6 @@ The dataset is organized into the following 12 files:
 | `11_eastbound_through.csv` | From **east** entering, going **straight** |
 | `12_eastbound_right_turn.csv` | From **east** entering, turning **right** |
 
-## Movement Encoding
-
-For convenience in data processing, each file also contains a `movement_code` column with the following standardized encodings:
-
-| Movement | Code | Description |
-|----------|------|-------------|
-| Southbound Left Turn | `SB-LT` | From south, turning left (west) |
-| Southbound Through | `SB-TH` | From south, going straight (north) |
-| Southbound Right Turn | `SB-RT` | From south, turning right (east) |
-| Westbound Left Turn | `WB-LT` | From west, turning left (south) |
-| Westbound Through | `WB-TH` | From west, going straight (east) |
-| Westbound Right Turn | `WB-RT` | From west, turning right (north) |
-| Northbound Left Turn | `NB-LT` | From north, turning left (east) |
-| Northbound Through | `NB-TH` | From north, going straight (south) |
-| Northbound Right Turn | `NB-RT` | From north, turning right (west) |
-| Eastbound Left Turn | `EB-LT` | From east, turning left (north) |
-| Eastbound Through | `EB-TH` | From east, going straight (west) |
-| Eastbound Right Turn | `EB-RT` | From east, turning right (south) |
-
-
 
 ## Usage
 
